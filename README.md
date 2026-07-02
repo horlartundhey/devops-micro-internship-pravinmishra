@@ -14,11 +14,11 @@
 
 | | |
 |---|---|
-| **Name** | Pravin Mishra |
-| **LinkedIn** | [pravin-mishra-aws-trainer](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) |
-| **Location** | Helsinki, Finland |
-| **Background** | Cloud, DevOps & AI Consultant |
-| **Goal** | Train 10,000+ DevOps professionals |
+| **Name** | Olatunde Ibitoye |
+| **LinkedIn** | www.linkedin.com/in/olatunde-ibitoye|
+| **Location** | Lagos, Nigeria |
+| **Background** | Software Developer |
+| **Goal** | Become a Agentic Devops Engineer that blends with Software Engineering |
 
 ---
 
