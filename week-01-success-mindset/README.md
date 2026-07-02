@@ -460,13 +460,13 @@ I tend to spend too much time planning, researching, and learning without shippi
 
 ### One system I will implement from this week (exact habit + time)
 
-2 hours of uninterrupted deep work on DMI assignments, AI/DevOps, or fintech projects.
-30 minutes documenting what I learned.
-30 minutes creating or scheduling a LinkedIn post, portfolio update, or GitHub documentation.
+3 hours of uninterrupted deep work on DMI assignments
+1 hour documenting what I learned.
+30 minutes creating or scheduling a LinkedIn post, my video or any other thing.
 
 ### LinkedIn Post
 
-Paste your LinkedIn post link here:
+Paste your LinkedIn post link here: https://www.linkedin.com/posts/olatunde-ibitoye_devops-agenticai-softwareengineering-share-7478560289806880768-e51b/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_xj1QBIy4RnDuKMoQp8yo4i8QCKxf266A
 
 `__________________________`
 
@@ -474,7 +474,7 @@ Paste your LinkedIn post link here:
 
 ## 10. Proof of Work
 
-- LinkedIn Post URL: **ADD LINK HERE**  
+- LinkedIn Post URL: **https://www.linkedin.com/posts/olatunde-ibitoye_devops-agenticai-softwareengineering-share-7478560289806880768-e51b/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_xj1QBIy4RnDuKMoQp8yo4i8QCKxf266A**  
 - Blog / Medium : **[Version 2.0](https://horlartundhey.hashnode.dev/what-my-2-0-version-looked-like)**  
 
 ---
