@@ -46,7 +46,7 @@ You can publish your blog on:
 
 #### Screenshot 1 — Blog published and visible
 
-Add your screenshot here.
+![Screenshot 1](DMI-SC-TASK/assignment8/sc1.png)
 
 ---
 
@@ -54,7 +54,7 @@ Add your screenshot here.
 
 Blog Link:
 
-`__________________________________________`
+`https://dev.to/horlartundhey/week-2-of-my-reflections-from-the-devops-micro-internship-guardrails-not-autopilot-1nje`
 
 ---
 
@@ -92,7 +92,7 @@ P.S. This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by 
 
 #### Screenshot 2 — LinkedIn post published
 
-Add your screenshot here.
+![Screenshot 1](DMI-SC-TASK/assignment8/sc2.png)
 
 ---
 
@@ -101,14 +101,35 @@ Add your screenshot here.
 LinkedIn Post Content (copy-paste here):
 
 ```
-Paste your LinkedIn post content here
+Week 2 of my DevOps Micro Internship with Agentic AI is done ✅
+
+What I learned is that Claude Code operates as an **agent**, not a chatbot: it reads context, plans, calls a tool, observes the result, and decides its next move, looping until the task is finished. That's powerful. But the part that really stuck with me is that this power is only *safe* because of what's built around it.
+
+A few things that clicked for me this week:
+
+🔹 **Skills turn long prompts into commands.** Instead of retyping a huge instruction every time, commands like `/scaffold-terraform` and `/tf-plan` package that logic into a single, reusable, version-controlled action.
+
+🔹 **Tool restrictions are the real safety net.** The `/tf-plan` skill is scoped to only `Bash, Read, Grep`, deliberately no `Write` access, because a plan should *observe* infrastructure, never change it. Meanwhile `settings.json` explicitly allows read-only Terraform/AWS commands and explicitly denies destructive ones like `rm -rf` and `aws iam`. That's not bureaucracy, that's what makes it safe to hand an agent real cloud infrastructure.
+
+🔹 **Hooks and subagents add another layer of control.** Scripts fire before and after every shell command to check and log behavior, and specialized subagents (like a security-auditor or cost-optimizer) can review work before anything reaches `apply`.
+
+🔹 **CLAUDE.md keeps the agent grounded.** By documenting what a project actually is (and isn't), it stops the AI from inventing tools or steps that don't belong, like assuming a build step exists in a pure HTML/CSS project.
+
+The biggest mindset shift: AI agents aren't valuable because they remove human oversight, they're valuable when they're *designed* with the right boundaries so humans can trust them with something real. Automation and control have to be built together, not one after the other.
+
+Still early in this journey, but Week 2 made it clear that good DevOps engineering with AI isn't about how much you can automate, it's about how deliberately you scope what the AI is allowed to touch.
+
+
+P.S. This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by Pravin Mishra. You can start your DevOps journey by joining this Discord community ( https://lnkd.in/egtdnkyT ).
+
+#DMIByPravinMishra #AgenticAI #ClaudeCode #DevOps #LearningInPublic
 ```
 
 ---
 
 ### LinkedIn Post Link:
 
-`__________________________________________`
+`https://www.linkedin.com/posts/olatunde-ibitoye_join-the-dmi-devops-micro-internship-share-7481344576662876160-hc4O/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_xj1QBIy4RnDuKMoQp8yo4i8QCKxf266A`
 
 ---
 

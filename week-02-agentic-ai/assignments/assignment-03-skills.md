@@ -72,7 +72,7 @@ Each task must be completed sequentially.
 mkdir -p .claude/skills/scaffold-terraform
 mkdir -p .claude/skills/tf-plan
 mkdir -p .claude/skills/tf-apply
-mkdir -p .claude/skills/deploy
+mkdir -p .claude/skills/deploy   
 ```
 
 **Expected Output:** VS Code sidebar shows `.claude/skills/` with 4 folders inside it.

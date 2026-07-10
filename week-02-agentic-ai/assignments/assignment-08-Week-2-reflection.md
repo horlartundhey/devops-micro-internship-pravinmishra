@@ -103,7 +103,7 @@ Write about the biggest thing you understood this week.
 For example, you can write about:
 
 * How Claude Code can follow an Agentic Loop
-* Why `CLAUDE.md` helps control AI behavior
+* Why `CLAUDE.md` helps control AI behavior 
 * How skills turn long prompts into reusable slash commands
 * Why tool restrictions matter
 * How subagents help divide work
@@ -177,12 +177,12 @@ Write about one moment you are proud of.
 
 Examples:
 
-* Creating the `.claude/skills/` folder structure correctly
-* Running `/scaffold-terraform`
-* Seeing Terraform files generated automatically
-* Understanding why `tf-plan` should not have Write access
-* Setting up memory or permissions
-* Fixing an error by reading the output carefully
+    * Creating the `.claude/skills/` folder structure correctly
+    * Running `/scaffold-terraform`
+    * Seeing Terraform files generated automatically
+    * Understanding why `tf-plan` should not have Write access
+    * Setting up memory or permissions
+    * Fixing an error by reading the output carefully
 
 ---
 

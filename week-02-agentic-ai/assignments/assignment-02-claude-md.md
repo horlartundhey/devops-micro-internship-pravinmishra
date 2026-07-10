@@ -116,7 +116,7 @@ What is this project and how should I deploy it?
    - No JavaScript in this project
    - CSS uses mobile-first approach with breakpoints at 900px, 768px, and 600px
 6. Add a **Safety** section:
-   > "Never put secrets in this file. No API keys, passwords, or AWS credentials."
+   > "   "
 7. Save the file
 
 **Expected Output:** A complete CLAUDE.md with all 5 sections, each containing project-specific content.

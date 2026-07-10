@@ -96,7 +96,7 @@ Remember the following for all future sessions: The CSS hero section uses a dark
 **Expected Output:** Claude confirms the memory was saved. The `MEMORY.md` file now contains all three pieces of information.
 
 **Screenshots Required:**
-- Screenshot 2 — Claude confirming the memory was saved
+- Screenshot 2 — Claude confirming the memory was saved 
 - Screenshot 3 — The `MEMORY.md` file open in VS Code showing the saved content
 
 ---

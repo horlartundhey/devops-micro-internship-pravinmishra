@@ -460,7 +460,7 @@ Destructive command detected.
 
 ```
 
-Run terraform validate in the terraform folder.
+  Run terraform validate in the terraform folder.
 
 ```
 

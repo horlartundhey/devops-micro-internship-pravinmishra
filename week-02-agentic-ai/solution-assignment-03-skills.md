@@ -20,7 +20,7 @@ Create the required `.claude/skills/` directory structure for all skills.
 
 #### Screenshot 1 — VS Code sidebar showing `.claude/skills/` folder with all 4 subfolders visible
 
-Add your screenshot here.
+![Screenshot 1](DMI-SC-TASK/assignment3/sc1.png)
 
 ---
 
@@ -34,13 +34,14 @@ Place all required skill files into their correct directories and verify their c
 
 #### Screenshot 2 — `.claude/skills/scaffold-terraform/` open in VS Code showing both `SKILL.md` and `template-spec.md`
 
-Add your screenshot here.
+![Screenshot 2a](DMI-SC-TASK/assignment3/sc2.png)
+![Screenshot 2b](DMI-SC-TASK/assignment3/sc2.1.png)
 
 ---
 
 #### Screenshot 3 — Screenshot 3 — `tf-plan/SKILL.md` frontmatter showing `allowed-tools: Bash, Read, Grep` (no Write) and `disable-model-invocation: true`
 
-Add your screenshot here.
+![Screenshot 3](DMI-SC-TASK/assignment3/sc3.png)
 
 ---
 
@@ -54,13 +55,13 @@ Execute the `/scaffold-terraform` skill to generate a full Terraform infrastruct
 
 #### Screenshot 4 — Claude's response showing the scaffold complete with the file list
 
-Add your screenshot here.
+![Screenshot 4](DMI-SC-TASK/assignment3/sc4.png)
 
 ---
 
 #### Screenshot 5 — VS Code sidebar showing the `terraform/` folder with all generated files inside
 
-Add your screenshot here.
+![Screenshot 5](DMI-SC-TASK/assignment3/sc5.png)
 
 ---
 
@@ -74,7 +75,7 @@ Initialize Terraform and execute the `/tf-plan` skill to observe plan execution 
 
 #### Screenshot 6 — Claude's `/tf-plan` response showing it ran the command and analyzed the result (pass or auth error both count)
 
-Add your screenshot here.
+![Screenshot 6](DMI-SC-TASK/assignment3/sc6.png)
 
 ---
 
@@ -90,14 +91,13 @@ Add your screenshot here.
 
 Paste your forked repository URL here:
 
-`__________________________`
+`https://github.com/horlartundhey/Ultimate-Agentic-DevOps-with-Claude-Code.git`
 
 ## LinkedIn post URL
 
 Paste your forked repository URL here:
 
-`__________________________`
----
+https://www.linkedin.com/posts/olatunde-ibitoye_dmibypravinmishra-agenticai-claudecode-share-7481356185049284608-RRhf/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_xj1QBIy4RnDuKMoQp8yo4i8QCKxf266A
 
 # Completion Checklist
 
