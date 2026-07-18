@@ -33,7 +33,7 @@ You will reuse this in later weeks. So do it properly once.
 
 ## Answer
 
-I believe the concept of religion has overtaken our quest for purpose and drive to be more, I see it eat people and when I try to talk about it, most people don't agree with me. 
+I believe the concept of religion has overtaken our quest for purpose and drive to be more. Instead of pushing people to take ownership of their choices, build discipline, and chase growth on their own terms, it often hands them a ready-made explanation for why things are the way they are and tells them to simply have faith. I've watched it eat people's ambition, their willingness to question things, and their sense of personal responsibility. Whenever I try to bring this up, most people don't agree with me, and a lot of them get defensive instead of actually engaging with the point.
 
 ---
 
@@ -214,8 +214,6 @@ It had become his reality.
 
 Paste your link here: https://horlartundhey.hashnode.dev/what-my-2-0-version-looked-like
 
-`Add your URL here`
-
 ---
 
 # Assignment 4. Have you ever cut corners (unethical / dishonest / shortcut behavior — not necessarily illegal)? If yes, how did it make you feel?
@@ -273,15 +271,15 @@ Choose books that improve:
 ## Book List
 
 1. Deep Work by Cal Newport
-2. Atomic Habits
-3. The 5am Club 
-4. Psychology of money
-5. So good they can't ignore you
-6. Never split the difference
-7. Essentialism
-8. Team Topologies
-9. The Devops handbook
-10. Designing data intensive applications
+2. Atomic Habits by James Clear
+3. The 5am Club by Robin Sharma
+4. Psychology of Money by Morgan Housel
+5. So Good They Can't Ignore You by Cal Newport
+6. Never Split the Difference by Chris Voss
+7. Essentialism by Greg McKeown
+8. Team Topologies by Matthew Skelton and Manuel Pais
+9. The DevOps Handbook by Gene Kim, Jez Humble, Patrick Debois, and John Willis
+10. Designing Data-Intensive Applications by Martin Kleppmann
 
 ---
 
@@ -344,8 +342,6 @@ Examples:
 **Yes / No**
 
 Answer: Yes
-
-Add your answer here...
 
 ---
 
@@ -466,16 +462,15 @@ I tend to spend too much time planning, researching, and learning without shippi
 
 ### LinkedIn Post
 
-Paste your LinkedIn post link here: https://www.linkedin.com/posts/olatunde-ibitoye_devops-agenticai-softwareengineering-share-7478560289806880768-e51b/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_xj1QBIy4RnDuKMoQp8yo4i8QCKxf266A
-
-`Add your URL here`
+`Paste your LinkedIn post link here: https://www.linkedin.com/posts/olatunde-ibitoye_devops-agenticai-softwareengineering-share-7478560289806880768-e51b/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_xj1QBIy4RnDuKMoQp8yo4i8QCKxf266A`
 
 ---
 
 ## 10. Proof of Work
 
-- LinkedIn Post URL: **https://www.linkedin.com/posts/olatunde-ibitoye_devops-agenticai-softwareengineering-share-7478560289806880768-e51b/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_xj1QBIy4RnDuKMoQp8yo4i8QCKxf266A**  
-- Blog / Medium : **[Version 2.0](https://horlartundhey.hashnode.dev/what-my-2-0-version-looked-like)**  
+LinkedIn Post URL: **https://www.linkedin.com/posts/olatunde-ibitoye_devops-agenticai-softwareengineering-share-7478560289806880768-e51b/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_xj1QBIy4RnDuKMoQp8yo4i8QCKxf266A**  
+
+Blog / Medium : **[Version 2.0 Blog](https://horlartundhey.hashnode.dev/what-my-2-0-version-looked-like)**  
 
 ---
 

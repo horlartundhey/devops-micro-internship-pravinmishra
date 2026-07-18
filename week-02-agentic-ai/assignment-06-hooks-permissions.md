@@ -20,7 +20,7 @@ Create the `.claude` directory structure required for team-level Claude Code con
 
 #### Screenshot 1 — `.claude` folder structure visible in VS Code Explorer
 
-![Screenshot 1](DMI-SC-TASK/assignment6/sc1.png)
+![Screenshot 1](screenshots/sc-33.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create a hook that checks user prompts before Claude processes them and blocks r
 
 #### Screenshot 2 — `user-prompt-guard.sh` open in VS Code showing the hook script
 
-![Screenshot 2](DMI-SC-TASK/assignment6/sc2.png)
+![Screenshot 2](screenshots/sc-34.png)
 
 ---
 
@@ -48,7 +48,7 @@ Create a hook that runs before Claude executes Bash commands and blocks dangerou
 
 #### Screenshot 3 — `pre-tool-guard.sh` open in VS Code showing the hook script
 
-![Screenshot 3](DMI-SC-TASK/assignment6/sc3.png)
+![Screenshot 3](screenshots/sc-35.png)
 
 ---
 
@@ -62,7 +62,7 @@ Create a hook that runs after Claude executes a Bash command and logs selected T
 
 #### Screenshot 4 — `post-tool-logger.sh` open in VS Code showing the hook script
 
-![Screenshot 4](DMI-SC-TASK/assignment6/sc4.png)
+![Screenshot 4](screenshots/sc-36.png)
 
 ---
 
@@ -76,7 +76,7 @@ Configure Claude Code permissions and connect the hook scripts created in the pr
 
 #### Screenshot 5 — `settings.json` open in VS Code showing permissions and hooks configuration
 
-![Screenshot 5](DMI-SC-TASK/assignment6/sc5.png)
+![Screenshot 5](screenshots/sc-37.png)
 
 ---
 
@@ -90,7 +90,7 @@ Prove the prompt-level hook works by typing a destructive prompt and verifying i
 
 #### Screenshot 6 — UserPromptSubmit hook blocking the destructive prompt
 
-![Screenshot 6](DMI-SC-TASK/assignment6/sc6.png)
+![Screenshot 6](screenshots/sc-38.png)
 
 ---
 
@@ -104,7 +104,7 @@ Prove the tool-level hook works by asking Claude to execute a dangerous Bash com
 
 #### Screenshot 7 — PreToolUse hook blocking terraform destroy
 
-![Screenshot 7](DMI-SC-TASK/assignment6/sc7.png)
+![Screenshot 7](screenshots/sc-39.png)
 
 ---
 
@@ -118,11 +118,11 @@ Prove the logging hook runs after a successful command execution and records Ter
 
 #### Screenshot 8 — Claude running terraform validate successfully
 
-![Screenshot 8](DMI-SC-TASK/assignment6/sc8.png)
+![Screenshot 8](screenshots/sc-40.png)
 
 #### Screenshot 9 — `.claude/deploy.log` showing the logged command
 
-![Screenshot 9](DMI-SC-TASK/assignment6/sc9.png)
+![Screenshot 9](screenshots/sc-41.png)
 
 ---
 

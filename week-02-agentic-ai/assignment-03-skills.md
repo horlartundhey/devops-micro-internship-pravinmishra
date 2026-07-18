@@ -20,7 +20,7 @@ Create the required `.claude/skills/` directory structure for all skills.
 
 #### Screenshot 1 — VS Code sidebar showing `.claude/skills/` folder with all 4 subfolders visible
 
-![Screenshot 1](DMI-SC-TASK/assignment3/sc1.png)
+![Screenshot 1](screenshots/sc-13.png)
 
 ---
 
@@ -34,14 +34,14 @@ Place all required skill files into their correct directories and verify their c
 
 #### Screenshot 2 — `.claude/skills/scaffold-terraform/` open in VS Code showing both `SKILL.md` and `template-spec.md`
 
-![Screenshot 2a](DMI-SC-TASK/assignment3/sc2.png)
-![Screenshot 2b](DMI-SC-TASK/assignment3/sc2.1.png)
+![Screenshot 2a](screenshots/sc-14.png)
+![Screenshot 2b](screenshots/sc-15.png)
 
 ---
 
 #### Screenshot 3 — Screenshot 3 — `tf-plan/SKILL.md` frontmatter showing `allowed-tools: Bash, Read, Grep` (no Write) and `disable-model-invocation: true`
 
-![Screenshot 3](DMI-SC-TASK/assignment3/sc3.png)
+![Screenshot 3](screenshots/sc-16.png)
 
 ---
 
@@ -55,13 +55,13 @@ Execute the `/scaffold-terraform` skill to generate a full Terraform infrastruct
 
 #### Screenshot 4 — Claude's response showing the scaffold complete with the file list
 
-![Screenshot 4](DMI-SC-TASK/assignment3/sc4.png)
+![Screenshot 4](screenshots/sc-17.png)
 
 ---
 
 #### Screenshot 5 — VS Code sidebar showing the `terraform/` folder with all generated files inside
 
-![Screenshot 5](DMI-SC-TASK/assignment3/sc5.png)
+![Screenshot 5](screenshots/sc-18.png)
 
 ---
 
@@ -75,7 +75,7 @@ Initialize Terraform and execute the `/tf-plan` skill to observe plan execution 
 
 #### Screenshot 6 — Claude's `/tf-plan` response showing it ran the command and analyzed the result (pass or auth error both count)
 
-![Screenshot 6](DMI-SC-TASK/assignment3/sc6.png)
+![Screenshot 6](screenshots/sc-19.png)
 
 ---
 

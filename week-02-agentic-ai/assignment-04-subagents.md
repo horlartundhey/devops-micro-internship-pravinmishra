@@ -20,7 +20,7 @@ Create the `.claude/agents/` directory and add all required agent files.
 
 #### Screenshot 1 — VS Code sidebar showing `.claude/agents/` with all 3 files
 
-![Screenshot 1](DMI-SC-TASK/assignment4/sc1.png)
+![Screenshot 1](screenshots/sc-20.png)
 
 ---
 
@@ -61,13 +61,13 @@ every time.
 
 #### Screenshot 2 — `security-auditor.md` frontmatter showing model and tools configuration
 
-![Screenshot 2](DMI-SC-TASK/assignment4/sc2.png)
+![Screenshot 2](screenshots/sc-21.png)
 
 ---
 
 #### Screenshot 3 — `cost-optimizer.md` frontmatter showing the model and tools configuration
 
-![Screenshot 3](DMI-SC-TASK/assignment4/sc3.png)
+![Screenshot 3](screenshots/sc-22.png)
 
 ---
 
@@ -81,13 +81,13 @@ Trigger the security auditor agent and analyze the generated security report for
 
 #### Screenshot 4 — The delegation message showing Claude launched the security-auditor
 
-![Screenshot 4](DMI-SC-TASK/assignment4/sc4.png)
+![Screenshot 4](screenshots/sc-23.png)
 
 ---
 
 #### Screenshot 5 — Security audit report output
 
-![Screenshot 5](DMI-SC-TASK/assignment4/sc5.png)
+![Screenshot 5](screenshots/sc-24.png)
 
 ---
 
@@ -101,8 +101,8 @@ Trigger the cost optimizer agent and review the generated cost optimization repo
 
 #### Screenshot 6 — The full cost optimization report
 
-![Screenshot 6a](DMI-SC-TASK/assignment4/sc6.1.png)
-![Screenshot 6b](DMI-SC-TASK/assignment4/sc6.2.png)
+![Screenshot 6a](screenshots/sc-25.png)
+![Screenshot 6b](screenshots/sc-26.png)
 
 ---
 

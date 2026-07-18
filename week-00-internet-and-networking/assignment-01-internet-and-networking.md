@@ -25,16 +25,16 @@ Take a screenshot of your interaction showing:
 
 Save your screenshot in the `screenshots` folder and update the file name below.
 
-![Task 1 Screenshot](screenshots/task-1-chatgpt.png)
+![Task 1 Screenshot](screenshots/sc-1.png)
 
 
-Replace `task-1-chatgpt.png` with your actual screenshot file name.
 
 ---
 
 ## What I Learned (2–3 lines)
 
-Add your answer here...
+A protocol in networking is a set of rules that devices follow to communicate with each other over a network.
+These rules tell computers how to send data, how to receive it, and how to understand it correctly.
 
 ---
 
@@ -59,7 +59,13 @@ Write a short explanation (**100–150 words**) that includes:
 
 ## Answer
 
-Add your answer here...
+- Packet Switching: Instead of sending data as one large block, the internet uses Packet Switching. This means the request and response are broken into small packets that travel through different network routes and are reassembled at their destination.
+
+- IP Address: When someone anywhere in the world tries to visit the EpicReads website, their computer sends a request to the server in Finland. The server has a unique digital address called an IP Address, which helps the internet know exactly where the website is located.
+
+- TCP/IP: The request travels across the internet using the TCP/IP suite. Every device on the network has a unique IP Address, which works like a digital address so data knows where to go.
+
+HTTP/HTTPS: When someone visits the EpicReads website, their browser sends a request over the internet using HTTP or the more secure HTTPS. These protocols define how web pages are requested and delivered between a browser and a server.
 
 ---
 
@@ -91,10 +97,8 @@ EpicReads bookstore has two application versions:
 
 Save your diagram image in the `screenshots` folder and update the file name below.
 
-![Application Architecture Diagram](screenshots/task-3-diagram.png)
+![Application Architecture Diagram](screenshots/sc-2.png)
 
-
-Replace `task-3-diagram.png` with your actual diagram file name.
 
 ---
 
@@ -102,18 +106,24 @@ Replace `task-3-diagram.png` with your actual diagram file name.
 
 ### Frontend
 
-* Add your answer here...
-* Add your answer here...
+HTML
+CSS
+JavaScript
+React
 
 ### Backend
 
-* Add your answer here...
-* Add your answer here...
+Node.js
+Python
+Spring Boot
+Django
 
 ### Database
 
-* Add your answer here...
-* Add your answer here...
+MySQL
+PostgreSQL
+MongoDB
+SQLite
 
 ---
 
@@ -142,7 +152,9 @@ In **50–100 words**, explain in your own words:
 
 ## Answer
 
-Add your answer here...
+The Domain Name System is like the internet’s phonebook. It translates easy-to-remember domain names such as epicreads.com into the numerical IP Address that computers use to locate servers on the internet. This allows users to access a website using a simple name instead of remembering a long number.
+
+To connect the domain epicreads.com to the server 52.172.142.222, an A Record should be used. An A record maps a domain name directly to an IPv4 address, which tells the DNS system exactly which server hosts the website.
 
 ---
 
@@ -178,10 +190,10 @@ ls
 
 Save your screenshot in the `screenshots` folder and update the file name below.
 
-![VS Code Setup Screenshot](screenshots/task-5-vscode.png)
+![VS Code Setup Screenshot](screenshots/sc-3.png)
 
 
-Replace `task-5-vscode.png` with your actual screenshot file name.
+
 
 ---
 
@@ -217,9 +229,7 @@ Add the following credit note at the end of your post:
 
 Paste your LinkedIn post URL here:
 
-```text
-Add your URL here...
-```
+`https://www.linkedin.com/posts/olatunde-ibitoye_devops-learninginpublic-networking-activity-7484078480301735936-e0uK?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_xj1QBIy4RnDuKMoQp8yo4i8QCKxf266A`
 
 ---
 
@@ -227,7 +237,39 @@ Add your URL here...
 
 Paste the full text of your LinkedIn post here:
 
-Add your post content here...
+🚀 My DevOps Learning Journey – Week 1
+
+I’ve started diving into DevOps, and here’s a summary of what I’ve learned so far 👇
+
+🔹 ChatGPT as a Learning Assistant
+I’m using ChatGPT to break down complex concepts into simple explanations. For example, I learned that a protocol is just a set of rules devices follow to communicate—just like rules in a conversation.
+
+🌐 Internet & Networking
+The internet works like a global delivery system. Data is broken into small packets (packet switching), sent across networks using TCP/IP, and delivered to the correct destination using IP addresses. Protocols like HTTP/HTTPS help browsers communicate with servers.
+
+🏗️ App Architecture
+I explored two common architectures:
+
+Two-tier: Frontend → Database
+Three-tier: Frontend → Backend → Database
+
+Each layer has its role:
+
+Frontend: User interface (HTML, CSS, JavaScript)
+Backend: Logic (Node.js, Python)
+Database: Storage (MySQL, PostgreSQL)
+
+🌍 DNS (Domain Name System)
+DNS acts like the internet’s phonebook, converting domain names into IP addresses. To connect a domain to a server, we use an A record, which maps directly to the server’s IP.
+
+💻 VS Code Setup
+I set up my development environment using VS Code with essential extensions for productivity, debugging, and coding efficiency—laying the foundation for real-world DevOps workflows.
+
+This is just the beginning, but I’m already seeing how everything connects—from how the internet works to how applications are structured.
+
+#DevOps #LearningInPublic #Networking #WebDevelopment #TechJourney
+
+P.S. This post is part of the FREE DevOps Micro Internship Cohort run by Pravin Mishra. You can start your DevOps journey for free from his YouTube Playlist.
 
 ---
 
@@ -235,19 +277,19 @@ Add your post content here...
 
 ### What did you find easy?
 
-Add your answer here...
+I found it easy to understand basic networking concepts when explained with real-life analogies.
 
 ---
 
 ### What was difficult?
 
-Add your answer here...
+What was a bit challenging was connecting all the pieces together (like TCP/IP, DNS, and architecture) into one clear flow.
 
 ---
 
 ### What will you improve next week?
 
-Add your answer here...
+Next week, I want to improve by doing more hands-on practice and building small projects to reinforce these concepts.
 
 ---
 

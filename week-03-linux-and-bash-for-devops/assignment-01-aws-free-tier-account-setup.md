@@ -20,19 +20,22 @@ Demonstrate understanding of AWS basics and Free Tier usage by answering the fol
 
 #### Question 1 — What is an AWS account, and why do you need it at this stage?
 
-Write your answer here.
+An aws account is a cloud service that gives an indivisual or organization access to cloud resources and a billing setup , so they can easily set up their product/project in a cloud environment. We actually need this account so we can have a hands-on experience with a cloud infrastructure, build and break things in a safe environment, and gain on the experience as a real devops engineer would at little or no cost . 
 
 ---
 
 #### Question 2 — What is AWS Free Tier, and how long does it last?
 
-Write your answer here.
+The AWS free tier, is basically like a free trial , but in this case, if you are able to stay within the usage limit, you are safe to use, it, the free tier, is essentially meant to support a range of roles, students, developers, startups, to use the cloud resource without worrying about paying as long as it is within the usage limit. 
 
 ---
 
 #### Question 3 — Name three AWS Free Tier services and their free usage limits.
 
-Write your answer here.
+S3: is a storage service that users store assets and website files, and can be retrieved allows for GET and PUT requests as long as it is within usage limit.
+EC2: this is the virtual server that users can spin up to run the cloud service instead of physical hardware. The usage limit on this is 750 hours per month on a t2 and t3 micro instance.
+DynamoDB: this is a NoSQL database service that can be used to manage a database service.
+
 
 ---
 
@@ -56,7 +59,7 @@ Confirm that your AWS account setup is complete by navigating to the Account sec
 
 #### Screenshot 1 — AWS Account page showing account name (email may be blurred)
 
-Add your screenshot here.
+![Screenshot 1](screenshots/sc-1.png)
 
 ---
 
