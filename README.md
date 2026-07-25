@@ -3,7 +3,7 @@
 ![Cohort](https://img.shields.io/badge/Cohort-3-blue?style=for-the-badge)
 ![Program](https://img.shields.io/badge/DevOps_Micro_Internship-Pravin_Mishra-orange?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-In_Progress-yellow?style=for-the-badge)
-![Weeks](https://img.shields.io/badge/Weeks_Completed-4%2F14-green?style=for-the-badge)
+![Weeks](https://img.shields.io/badge/Weeks_Completed-5%2F14-green?style=for-the-badge)
 
 > 👋 **New here?** Read the [submission instructions](./onboarding) first — how to fork, fill in, and submit your assignments.
 > Find all the required links & assignment guidelines from here [Required links](./dmi_cohort3_resources.md)
@@ -75,8 +75,7 @@ This is not a course. It is an internship-style program — real deployments, re
 
 [![Week 03 – Linux & Bash](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/)
 
-<!-- Week 04 → Git & GitHub -->
-<!-- [![Week 04 – Git](./badges/week-04.svg)](./week-04-github/) -->
+[![Week 04 – Git](./badges/week-04.svg)](./week-04-git-and-github/)
 
 <!-- Week 05 → DevOps Lifecycle & Agile -->
 <!-- [![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/) -->
@@ -130,7 +129,7 @@ This is not a course. It is an internship-style program — real deployments, re
 | 01 | Success Mindset | ✅ Completed | ✅ Solved | [LinkedIn](https://www.linkedin.com/posts/olatunde-ibitoye_devops-agenticai-softwareengineering-share-7478560289806880768-e51b/) | [Blog](https://horlartundhey.hashnode.dev/what-my-2-0-version-looked-like) |
 | 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved | [LinkedIn](https://www.linkedin.com/posts/olatunde-ibitoye_join-the-dmi-devops-micro-internship-share-7481344576662876160-hc4O/) | [Blog](https://dev.to/horlartundhey/week-2-of-my-reflections-from-the-devops-micro-internship-guardrails-not-autopilot-1nje) |
 | 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Solved | [LinkedIn](https://www.linkedin.com/posts/olatunde-ibitoye_aws-ec2-linux-share-7483511706464288769-msse/) | [Blog](https://dev.to/horlartundhey/week-3-at-dmi-when-linux-stopped-being-theory-1cl5) |
-| 04 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
+| 04 | Git & GitHub | ✅ Completed | ✅ Solved | [LinkedIn 1](https://www.linkedin.com/posts/olatunde-ibitoye_devops-linux-git-activity-7486573245446606848-s5u8) · [LinkedIn 2](https://www.linkedin.com/posts/olatunde-ibitoye_devops-git-github-share-7486748178856427520-3ZdI/) · [LinkedIn 3](https://www.linkedin.com/posts/olatunde-ibitoye_dmibypravinmishra-git-github-activity-7486772307131195392-7KBG) | [Blog](https://dev.to/horlartundhey/devops-week-04-from-git-commits-to-a-live-ec2-server-deploying-codetrack-with-nginx-3p9a) |
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
 | 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
