@@ -203,7 +203,7 @@ Publish a LinkedIn post about what you delivered, including your live URL, three
 
 Paste your LinkedIn post URL here:
 
-`https://www.linkedin.com/feed/update/urn:li:activity:7501262377766592512/`
+`https://www.linkedin.com/posts/olatunde-ibitoye_shipped-a-ui-improvement-for-gotto-job-activity-7501262377766592512-WbYu?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_xj1QBIy4RnDuKMoQp8yo4i8QCKxf266A`
 
 ---
 

@@ -180,7 +180,7 @@ Publish a LinkedIn post about your five-day mini-Sprint, including your GitHub r
 
 Paste your LinkedIn post URL here:
 
-`https://www.linkedin.com/feed/update/urn:li:activity:7499374370067496960/`
+`https://www.linkedin.com/posts/olatunde-ibitoye_devops-linux-git-activity-7499374370067496960-JZlZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_xj1QBIy4RnDuKMoQp8yo4i8QCKxf266A`
 
 ---
 
