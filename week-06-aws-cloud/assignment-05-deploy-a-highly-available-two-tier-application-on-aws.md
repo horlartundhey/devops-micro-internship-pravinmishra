@@ -84,7 +84,7 @@ Launch a private, Multi-AZ RDS database (MySQL or PostgreSQL) using the private 
 
 #### Screenshot 9 — RDS summary showing Multi-AZ = Yes and Publicly accessible = No
 
-Add your screenshot here.
+![Screenshot 9](screenshots/sc40.png)
 
 ---
 
@@ -275,7 +275,7 @@ Paste your LinkedIn post URL here:
 
 - [x] Task 1: VPC, four subnets, IGW, NAT Gateway, and route tables created (Screenshots 1–5)
 - [x] Task 2: Least-privilege ALB, EC2, and RDS security groups created (Screenshots 6–8)
-- [ ] Task 3: Private Multi-AZ RDS created (Screenshots 9–10) — Screenshot 9 (Multi-AZ = Yes summary) still missing, only Screenshot 10 wired in
+- [x] Task 3: Private Multi-AZ RDS created (Screenshots 9–10)
 - [x] Task 4: Self-configuring Launch Template created and tested (Screenshots 11–12)
 - [x] Task 5: ALB created across both public subnets (Screenshots 13–14)
 - [x] Task 6: Auto Scaling Group running two instances across two AZs (Screenshots 15–16)
