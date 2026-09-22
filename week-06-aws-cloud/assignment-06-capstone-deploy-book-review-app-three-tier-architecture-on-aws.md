@@ -20,7 +20,7 @@ Create an architecture diagram showing the custom VPC (10.0.0.0/16), the six sub
 
 #### Diagram image or link
 
-Add your diagram image or link here.
+![Architecture Diagram](screenshots/sc55.png)
 
 ---
 
@@ -32,15 +32,19 @@ Record the AWS Region used and list every AWS service used across networking, co
 
 ### Notes
 
-**Region:**
 
-Write your answer here.
+**Region:** eu-north-1
 
 ---
 
 **Services:**
 
-Write your answer here.
+Networking: VPC, 6 Subnets, Internet Gateway, NAT Gateway, Elastic IP, 3 Route Tables
+Security: 3 Security Groups (Web, App, DB)
+Compute: 2× EC2 (Ubuntu 24.04 LTS)
+Load Balancing: 2× Application Load Balancer (public + internal), 2× Target Groups
+Database: Amazon RDS MySQL (Multi-AZ), RDS Read Replica
+Application tooling: Nginx (reverse proxy), PM2 (process manager), Node.js/npm, Git
 
 ---
 
@@ -56,7 +60,7 @@ Confirm the Book Review App loads through the public ALB DNS name.
 
 Paste your public ALB DNS name here:
 
-`Add your URL here`
+`http://book-review-web-alb-597773926.eu-north-1.elb.amazonaws.com`
 
 ---
 
@@ -70,37 +74,37 @@ Capture visual proof of every tier and load balancer.
 
 #### Web EC2
 
-Add your screenshot here.
+![Web EC2](screenshots/sc56-web-ec2.png)
 
 ---
 
 #### App EC2
 
-Add your screenshot here.
+![App EC2](screenshots/sc57-app-ec2.png)
 
 ---
 
 #### Public ALB
 
-Add your screenshot here.
+![Public ALB](screenshots/sc58-alb-pub.png)
 
 ---
 
 #### Internal ALB
 
-Add your screenshot here.
+![Internal ALB](screenshots/sc59-alb-inter.png)
 
 ---
 
 #### RDS + Replica
 
-Add your screenshot here.
+![RDS + Replica](screenshots/sc60-rds-repli.png)
 
 ---
 
 #### App UI proof
 
-Add your screenshot here.
+![App UI proof](screenshots/sc61-app-ui.png)
 
 ---
 
@@ -114,19 +118,35 @@ Summarize what worked in the final deployment, the issues encountered and how ea
 
 **What worked:**
 
-Write your answer here.
+The full three-tier chain is functioning end-to-end: registration and login work through the Public ALB DNS name, the frontend correctly proxies /api/* requests through Nginx to the Internal ALB, and the backend successfully connects to the private Multi-AZ RDS instance. Both EC2 tiers run under PM2 for persistence, and the security group chain (Web → App → DB) enforces that only the intended tier can reach the next.
 
 ---
 
 **Issues + fixes:**
 
-Write your answer here.
+- VPC/subnet mismatch on instance launch — a test EC2 instance failed to launch because its security group and subnet belonged to different VPCs; fixed by explicitly re-selecting matching VPC resources.
+
+- Self-referencing security group rule — App-SG's port 3001 rule (sourced from itself) couldn't be added during initial creation, since AWS requires the group to already exist before it can reference its own ID; fixed by creating the group first, then adding that rule in a second pass.
+
+- RDS security group source mismatch — the database security group was initially configured to trust Web-SG instead of App-SG, causing connection timeouts from the app tier; corrected to trust App-SG, matching the intended security chain.
+
+- Nginx proxy_pass pointing at the wrong ALB hostname — the config initially contained an example/placeholder Internal ALB DNS name rather than the actual one; corrected to the project's real Internal ALB endpoint.
+
+- Backend EADDRINUSE crash loop — an earlier foreground test (node src/server.js) was never stopped before also starting the app under PM2, causing repeated port conflicts; resolved by clearing the stale process and starting cleanly, once, under PM2.
+
+- /api/api/books 404 (path-doubling bug) — one frontend file called the books endpoint with a redundant /api prefix on top of the already-set NEXT_PUBLIC_API_URL=/api; fixed by correcting the single offending line and rebuilding (required, since this env var is compiled into the bundle at build time, not read at runtime).
+
+- CORS rejection on registration — the backend's ALLOWED_ORIGINS didn't include the exact Public ALB DNS name being used for testing; fixed by adding it and restarting the backend process to reload the updated .env.
+
+- SSH connection timeout to Web EC2 — caused by a dynamic home IP address changing after the security group's SSH rule was originally scoped to "My IP"; resolved by re-selecting "My IP" in the console to refresh the allowed address.
+
+- Unexplained external redirect (return.st) on the frontend — briefly observed via both a direct curl to the frontend and a browser-blocked redirect attempt on the register page. Investigated for potential compromise (checked source, dependencies, build output, auth logs, and cron for signs of tampering), no conclusive source was found in the codebase or logs, and the issue did not reproduce after a clean dependency reinstall and rebuild. Flagged here rather than dismissed, since the root cause was not definitively isolated.
 
 ---
 
 **Tools/sources used:**
 
-Write your answer here.
+AWS documentation (VPC, RDS, ALB, Security Groups), the assignment's own troubleshooting appendix (which correctly predicted several of the exact issues hit, including the CORS and path-doubling bugs), and iterative debugging via curl, pm2 logs, browser DevTools Network tab, and direct MySQL queries against RDS.
 
 ---
 
@@ -142,13 +162,13 @@ Publish a LinkedIn post sharing the capstone deployment, including the public AL
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/olatunde-ibitoye_devops-aws-terraform-activity-7507553500239884288-vUlV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_xj1QBIy4RnDuKMoQp8yo4i8QCKxf266A`
 
 ---
 
 #### Screenshot of LinkedIn post
 
-Add your screenshot here.
+![LinkedIn Post Screenshot](screenshots/sc62.png)
 
 ---
 
@@ -161,12 +181,12 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: Architecture diagram completed
-- [ ] Task 2: AWS Region and services documented
-- [ ] Task 3: Public ALB DNS confirmed working
-- [ ] Task 4: All six evidence screenshots captured (Web Tier, App Tier, both ALBs, RDS + replica, app UI)
-- [ ] Task 5: Deployment summary completed (what worked, issues/fixes, tools/sources)
-- [ ] LinkedIn post published and URL submitted
+- [x] Task 1: Architecture diagram completed
+- [x] Task 2: AWS Region and services documented
+- [x] Task 3: Public ALB DNS confirmed working
+- [x] Task 4: All six evidence screenshots captured (Web Tier, App Tier, both ALBs, RDS + replica, app UI)
+- [x] Task 5: Deployment summary completed (what worked, issues/fixes, tools/sources)
+- [x] LinkedIn post published and URL submitted
 - [ ] App Tier and Database Tier confirmed not publicly accessible
 - [ ] No sensitive data exposed
 

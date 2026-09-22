@@ -3,7 +3,7 @@
 ![Cohort](https://img.shields.io/badge/Cohort-3-blue?style=for-the-badge)
 ![Program](https://img.shields.io/badge/DevOps_Micro_Internship-Pravin_Mishra-orange?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-In_Progress-yellow?style=for-the-badge)
-![Weeks](https://img.shields.io/badge/Weeks_Completed-6%2F14-green?style=for-the-badge)
+![Weeks](https://img.shields.io/badge/Weeks_Completed-7%2F14-green?style=for-the-badge)
 
 > 👋 **New here?** Read the [submission instructions](./onboarding) first — how to fork, fill in, and submit your assignments.
 > Find all the required links & assignment guidelines from here [Required links](./dmi_cohort3_resources.md)
@@ -81,7 +81,7 @@ This is not a course. It is an internship-style program — real deployments, re
 [![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/)
 
 <!-- Week 06 → AWS Cloud -->
-<!-- [![Week 06 – AWS](./badges/week-06.svg)](./week-06-aws-cloud/) -->
+[![Week 06 – AWS](./badges/week-06.svg)](./week-06-aws-cloud/)
 
 <!-- Week 07 → Azure Cloud -->
 <!-- [![Week 07 – Azure](./badges/week-07.svg)](./week-07-azure-cloud/) -->
@@ -131,7 +131,7 @@ This is not a course. It is an internship-style program — real deployments, re
 | 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Solved | [LinkedIn](https://www.linkedin.com/posts/olatunde-ibitoye_aws-ec2-linux-share-7483511706464288769-msse/) | [Blog](https://dev.to/horlartundhey/week-3-at-dmi-when-linux-stopped-being-theory-1cl5) |
 | 04 | Git & GitHub | ✅ Completed | ✅ Solved | [LinkedIn 1](https://www.linkedin.com/posts/olatunde-ibitoye_devops-linux-git-activity-7486573245446606848-s5u8) · [LinkedIn 2](https://www.linkedin.com/posts/olatunde-ibitoye_devops-git-github-share-7486748178856427520-3ZdI/) · [LinkedIn 3](https://www.linkedin.com/posts/olatunde-ibitoye_dmibypravinmishra-git-github-activity-7486772307131195392-7KBG) | [Blog](https://dev.to/horlartundhey/devops-week-04-from-git-commits-to-a-live-ec2-server-deploying-codetrack-with-nginx-3p9a) |
 | 05 | DevOps Lifecycle & Agile | ✅ Completed | ✅ Solved | [LinkedIn 1](https://www.linkedin.com/posts/olatunde-ibitoye_devops-linux-git-activity-7499374370067496960-JZlZ) · [LinkedIn 2](https://www.linkedin.com/posts/olatunde-ibitoye_shipped-a-ui-improvement-for-gotto-job-activity-7501262377766592512-WbYu) | [Blog](https://dev.to/horlartundhey/from-backlog-to-burndown-running-real-scrum-in-jira-3kic) |
-| 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
+| 06 | AWS Cloud | ✅ Completed | ✅ Solved | [LinkedIn](https://www.linkedin.com/posts/olatunde-ibitoye_devops-aws-terraform-activity-7507553500239884288-vUlV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_xj1QBIy4RnDuKMoQp8yo4i8QCKxf266A) | [Blog](https://dev.to/horlartundhey/a-week-of-building-and-breaking-aws-infrastructure-gae) |
 | 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
 | 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
