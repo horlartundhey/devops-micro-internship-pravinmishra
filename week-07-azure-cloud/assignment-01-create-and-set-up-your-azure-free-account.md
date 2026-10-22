@@ -58,7 +58,7 @@ Share your Azure account setup achievement and DMI Leaderboard progress together
 
 #### Screenshot 3 — Published WhatsApp Status showing your Azure account setup update, automatically generated DMI Leaderboard rank, and personal progress link
 
-Add your screenshot here.
+![Screenshot 3](screenshots/sc61.png)
 
 > **Privacy Note:** Do not include payment details, subscription IDs, private phone numbers, or other sensitive information.
 
