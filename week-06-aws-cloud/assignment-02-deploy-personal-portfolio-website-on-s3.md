@@ -1,6 +1,6 @@
 # Assignment 2 — Deploy Personal Portfolio Website on S3
 
-Part of the DevOps Micro Internship (DMI) with Agentic AI
+Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
 
 ---
 
@@ -107,37 +107,6 @@ Edit a small visible detail, re-upload it to S3, and confirm the change appears 
 ![Screenshot 7](screenshots/sc8.png)
 
 ---
-# LinkedIn Post (Required)
-
-## Goal
-
-Publish a LinkedIn post sharing your experience deploying a portfolio website using Amazon S3 Static Website Hosting.
-
-Include:
-- A screenshot of your live portfolio website
-- Your live S3 Website Endpoint URL
-- A caption in your own words explaining what you deployed, what you learned about S3 hosting and public-read permissions, and any challenges you resolved
-- If you completed Task 7, describe how you updated and re-uploaded a website file
-
-Include the required hashtags, the credit note for your track, and the tags specified in the assignment guidelines.
-
-## Evidence
-
-#### LinkedIn Post URL
-
-Paste your LinkedIn post URL here:
-
-`Add your URL here`
-
----
-
-#### Screenshot 8 — Published LinkedIn post showing your caption, live S3 website link, and portfolio screenshot
-
-Add your screenshot here.
-
-> **Privacy Note:** Do not expose credentials, billing details, or sensitive AWS account information.
-
----
 
 # Submission Instructions
 
@@ -158,7 +127,6 @@ Add your screenshot here.
 - [x] Task 7: Optional small update re-uploaded and verified (Screenshot 7)
 - [ ] S3 Website Endpoint URL included
 - [ ] No sensitive account information exposed
-- [ ] Linkedin post published
 
 ---
 
@@ -182,4 +150,4 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) — Agentic AI Track.*
+*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
