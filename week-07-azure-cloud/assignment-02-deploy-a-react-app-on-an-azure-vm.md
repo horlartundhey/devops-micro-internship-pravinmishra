@@ -1,6 +1,6 @@
 # Assignment 2 — Deploy a React App on an Azure VM (Ubuntu + Nginx)
 
-Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
+Part of the DevOps Micro Internship (DMI) with Agentic AI
 
 ---
 
@@ -133,6 +133,38 @@ Optional, not captured.
 
 ---
 
+# LinkedIn Post (Required)
+
+## Goal
+
+Publish a LinkedIn post sharing your experience deploying the React application on an Azure VM using Ubuntu and Nginx.
+
+Include:
+
+- A screenshot of the live React application showing your full name and deployment date
+- Your application URL: `http://<AZURE_VM_PUBLIC_IP>`
+- A caption in your own words explaining what you deployed, what you learned about Azure VMs, Network Security Groups, SSH, building React applications, and Nginx, and any challenge you resolved
+
+Include these hashtags:
+
+#DMIByPravinMishra #Azure #DevOps #CloudComputing
+
+Add the credit note for your track, replace `YOUR-GITHUB-USERNAME` with your GitHub username, and include the tags specified in the assignment guidelines.
+
+### Evidence
+
+#### LinkedIn Post URL
+
+Paste your LinkedIn post URL here:
+
+`Add your URL here`
+
+---
+
+#### Screenshot 11 — Published LinkedIn post showing your caption, application URL, and live React application screenshot
+
+Add your screenshot here.
+
 # Submission Instructions
 
 - Add all required screenshots in your submission
@@ -174,4 +206,4 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+*This submission is part of DevOps Micro Internship (DMI) — Agentic AI Track.*

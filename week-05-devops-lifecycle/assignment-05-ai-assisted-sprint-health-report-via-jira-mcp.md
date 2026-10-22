@@ -1,6 +1,6 @@
 # Assignment 5 — AI-Assisted Sprint Health Report via Jira MCP
 
-Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
+Part of the DevOps Micro Internship (DMI) with Agentic AI
 
 ---
 
@@ -223,12 +223,46 @@ Gather
 
 ---
 
+# LinkedIn Post (Required)
+
+## Goal
+
+Publish a LinkedIn post including a screenshot of your `/sprint-health` report.
+
+Write a caption in your own words explaining:
+- What you built using Claude Code and Jira MCP
+- What you learned about connecting AI to live sprint data
+- How the sprint-health report helps identify issues that need attention
+- Why you restricted the assistant to read-only access and kept board changes under human control
+
+Include these hashtags:
+
+#DMIByPravinMishra #AgenticAI #ClaudeCode #DevOps #Agile
+
+Add the credit note for your track, as provided in the assignment guidelines, and replace `YOUR-GITHUB-USERNAME` with your GitHub username.
+
+## Evidence
+
+#### LinkedIn Post URL
+
+Paste your LinkedIn post URL here:
+
+`Add your URL here`
+
+---
+
+#### Screenshot 9 — Published LinkedIn post showing the caption and sprint-health report image
+
+Add your screenshot here.
+
+---
+
 # Submission Instructions
 
 Complete all tasks in sequence.
 
 Your submission must include:
-- All 8 required screenshots
+- All 9 required screenshots
 - All the required notes
 
 ---
@@ -245,6 +279,8 @@ Your submission must include:
 - [x] Skill never created, edited, transitioned, or commented on any issue
 - [x] Reflection answered (Notes)
 - [x] No API token value exposed
+- [ ] LinkedIn Post URL
+- [ ] LinkedIn Screenshot 1
 
 ---
 
@@ -268,4 +304,4 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+*This submission is part of DevOps Micro Internship (DMI) — Agentic AI Track.*
