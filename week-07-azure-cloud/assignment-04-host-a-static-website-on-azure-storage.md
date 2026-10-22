@@ -50,7 +50,7 @@ Open the primary endpoint URL and confirm the Mini Finance application, styling,
 
 #### Screenshot 1 — Mini Finance website running in the browser
 
-Add your screenshot here.
+![Screenshot 1](screenshots/sc15.png)
 
 ---
 
@@ -58,7 +58,7 @@ Add your screenshot here.
 
 Paste the Azure Storage static website URL here:
 
-`Add your URL here`
+`https://minifinanceolatunde.z55.web.core.windows.net/`
 
 ---
 
@@ -71,11 +71,11 @@ Paste the Azure Storage static website URL here:
 
 # Completion Checklist
 
-- [ ] Mini Finance project downloaded and extracted
-- [ ] Storage Account created with Static Website Hosting enabled
-- [ ] All website files uploaded to the `$web` container
-- [ ] Website verified through the primary endpoint (Screenshot 1)
-- [ ] Website URL included
+- [x] Mini Finance project downloaded and extracted
+- [x] Storage Account created with Static Website Hosting enabled
+- [x] All website files uploaded to the `$web` container
+- [x] Website verified through the primary endpoint (Screenshot 1)
+- [x] Website URL included
 - [ ] No sensitive account information exposed
 
 ---
