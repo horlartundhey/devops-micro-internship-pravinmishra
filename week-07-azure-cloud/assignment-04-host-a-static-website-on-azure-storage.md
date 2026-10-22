@@ -76,7 +76,7 @@ Paste the Azure Storage static website URL here:
 - [x] All website files uploaded to the `$web` container
 - [x] Website verified through the primary endpoint (Screenshot 1)
 - [x] Website URL included
-- [ ] No sensitive account information exposed
+- [x] No sensitive account information exposed
 
 ---
 

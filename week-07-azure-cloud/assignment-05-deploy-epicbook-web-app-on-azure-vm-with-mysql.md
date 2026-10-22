@@ -151,7 +151,7 @@ Paste the public IP URL of your Virtual Machine here:
 - [x] Task 3: EpicBook frontend and backend deployed (Screenshots 6–8)
 - [x] Task 4: Private Azure Database for MySQL created and data imported (Screenshots 9–11)
 - [x] Task 5: End-to-end functionality validated (Screenshots 12–13, Public IP URL)
-- [ ] No sensitive data exposed
+- [x] No sensitive data exposed
 
 ---
 

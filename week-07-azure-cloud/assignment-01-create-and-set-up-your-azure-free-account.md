@@ -78,7 +78,7 @@ Share your Azure account setup achievement and DMI Leaderboard progress together
 - [x] Azure Portal accessed successfully (Screenshot 1)
 - [x] Free Trial subscription confirmed (Screenshot 2)
 - [x] Reflection paragraph written (Notes)
-- [ ] No sensitive information exposed
+- [x] No sensitive information exposed
 
 ---
 

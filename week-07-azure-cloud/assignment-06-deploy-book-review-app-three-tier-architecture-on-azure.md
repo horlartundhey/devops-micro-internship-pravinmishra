@@ -261,7 +261,7 @@ Backup: the MySQL flexible server uses automated backups with 7-day retention. H
 - [x] Task 6: Managed database tier deployed privately (Screenshots 13–15)
 - [x] Task 7: Public entry, internal routing, and monitoring configured (Screenshots 16–18)
 - [x] Task 8: End-to-end validation and availability test completed (Screenshots 19–22, Public Endpoint, Notes)
-- [ ] No sensitive data exposed
+- [x] No sensitive data exposed
 
 ---
 

@@ -162,7 +162,7 @@ Your submission must include:
 - [x] Task 6: `/azure-audit` skill created with no `Write` permission and run successfully (Screenshots 7–8)
 - [x] Task 7: A real finding fixed by you (not Claude) and re-verified as resolved (Screenshots 9–11)
 - [x] Notes comparing this to the Week 6 AWS audit completed
-- [ ] No subscription IDs, tenant IDs, or credentials exposed
+- [x] No subscription IDs, tenant IDs, or credentials exposed
 
 ---
 
