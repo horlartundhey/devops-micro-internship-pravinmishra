@@ -8,7 +8,7 @@ Part of the DevOps Micro Internship (DMI) with Agentic AI
 
 **Full Name:** Olatunde Ibitoye  
 **Cloud Platform:** AWS or Azure  
-**GitHub Repository URL:** Add your repository URL here  
+**GitHub Repository URL:** [https://github.com/horlartundhey/devops-micro-internship-pravinmishra](https://github.com/horlartundhey/devops-micro-internship-pravinmishra) 
 **Public Application URL / Load-Balancer DNS:** [http://book-review-capstone-pub-alb-1362760868.eu-north-1.elb.amazonaws.com/](http://book-review-capstone-pub-alb-1362760868.eu-north-1.elb.amazonaws.com/)
 
 ---
