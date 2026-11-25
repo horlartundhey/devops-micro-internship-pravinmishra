@@ -70,7 +70,7 @@ Add a screenshot of the Infrastructure Pipeline run showing:
 * `backend_private_ip`
 * `mysql_fqdn`
 
-Add your screenshot here.
+![Screenshot 1](screenshots/sc20.png)
 
 > Do not expose the MySQL password, Client Secret, Terraform state, SSH private key, or another sensitive value.
 
@@ -86,7 +86,7 @@ Add a screenshot of the Azure Portal Resource Group overview showing:
 * Azure Database for MySQL Flexible Server
 * Related EpicBook resources
 
-Add your screenshot here.
+![Screenshot 2](screenshots/sc21.png)
 
 > Hide sensitive IDs, credentials, and database details.
 
@@ -124,7 +124,7 @@ Run the Application Pipeline to configure the VMs, deploy EpicBook, and verify t
 
 Add a screenshot of the Application Pipeline run summary showing all required stages or jobs succeeded.
 
-Add your screenshot here.
+![Screenshot 3](screenshots/sc22.png)
 
 ---
 
@@ -137,7 +137,7 @@ Add a screenshot of the Application Pipeline log showing:
 * Zero failed hosts
 * Zero unreachable hosts
 
-Add your screenshot here.
+![Screenshot 4](screenshots/sc23.png)
 
 > Do not expose the SSH private key, MySQL password, Client Secret, or complete database connection string.
 
@@ -162,7 +162,7 @@ Add a browser screenshot showing:
 
 The screenshot may show a product, cart, or successful order view.
 
-Add your screenshot here.
+![Screenshot 5](screenshots/sc24.png)
 
 > Do not expose credentials or sensitive information.
 
@@ -172,15 +172,15 @@ Add your screenshot here.
 
 ## Frontend Application URL
 
-[Paste your final EpicBook application URL here.]
+[[http://51.132.189.205](http://51.132.189.205)]
 
 ## Infrastructure Repository URL
 
-[Paste your Infrastructure Repository URL here.]
+[[https://github.com/horlartundhey/infra-epicbook](https://github.com/horlartundhey/infra-epicbook)]
 
 ## Application Repository URL
 
-[Paste your Application Repository URL here.]
+[[https://github.com/horlartundhey/theepicbook](https://github.com/horlartundhey/theepicbook)]
 
 ---
 
@@ -188,7 +188,7 @@ Add your screenshot here.
 
 Write a short explanation of why separate Infrastructure and Application Repositories were used.
 
-[Write your explanation here.]
+[I separated the infrastructure and the application into two repositories because they have different owners, change at different speeds and carry different risks. infra-epicbook holds the Terraform code and the Infrastructure Pipeline that creates the network, VMs and Azure Database for MySQL, which changes rarely and needs a reviewed plan and approval. theepicbook holds the application, the Ansible roles and the Application Pipeline, which can be deployed many times without touching the cloud resources. Each repository has its own history, pipeline and permissions, so an application change can't accidentally modify or destroy infrastructure, and an infrastructure change goes through plan and approval before it applies.]
 
 ---
 
@@ -201,7 +201,7 @@ Write a short explanation of how the following non-sensitive Terraform outputs w
 * `backend_private_ip`
 * `mysql_fqdn`
 
-[Write your explanation here.]
+[After the Infrastructure Pipeline applied successfully, I opened the Apply stage log and copied the four non-sensitive outputs: app_public_ip, backend_ansible_host, backend_private_ip and mysql_fqdn. In the Application Repository I put the two public addresses in ansible/inventory/hosts.ini (the frontend and backend hosts) and the backend private IP and MySQL FQDN in ansible/group_vars/all.yml, then committed and pushed them. No secret crossed between the repositories: the MySQL password stays in a secret variable group, the SSH private key in Azure DevOps Secure Files, and the Terraform state in a private Azure Storage backend.]
 
 ---
 
@@ -216,11 +216,11 @@ Add a screenshot of your LinkedIn post showing:
 * Post text
 * At least one image or link
 
-Add your screenshot here.
+![Screenshot 6](screenshots/sc25.png)
 
 ## LinkedIn Post URL
 
-[Paste your public LinkedIn post URL here.]
+[[https://www.linkedin.com/posts/olatunde-ibitoye_dmibypravinmishra-terraform-ansible-ugcPost-7531310965737586688-az5I/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_xj1QBIy4RnDuKMoQp8yo4i8QCKxf266A](https://www.linkedin.com/posts/olatunde-ibitoye_dmibypravinmishra-terraform-ansible-ugcPost-7531310965737586688-az5I/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_xj1QBIy4RnDuKMoQp8yo4i8QCKxf266A)]
 
 Your post must include:
 

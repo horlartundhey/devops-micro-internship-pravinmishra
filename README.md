@@ -90,10 +90,10 @@ This is not a course. It is an internship-style program — real deployments, re
 [![Week 08 – Terraform](./badges/week-08.svg)](./week-08-terraform/)
 
 <!-- Week 09 → Ansible -->
-<!-- [![Week 09 – Ansible](./badges/week-09.svg)](./week-09-ansible/) -->
+[![Week 09 – Ansible](./badges/week-09.svg)](./week-09-ansible/)
 
 <!-- Week 10 → Azure DevOps CI/CD -->
-<!-- [![Week 10 – CI/CD](./badges/week-10.svg)](./week-10-azure-devops/) -->
+[![Week 10 – CI/CD](./badges/week-10.svg)](./week-10-azure-devops/)
 
 <!-- Week 11 → Docker -->
 <!-- [![Week 11 – Docker](./badges/week-11.svg)](./week-11-docker/) -->
@@ -134,8 +134,8 @@ This is not a course. It is an internship-style program — real deployments, re
 | 06 | AWS Cloud | ✅ Completed | ✅ Solved | [LinkedIn](https://www.linkedin.com/posts/olatunde-ibitoye_devops-aws-terraform-activity-7507553500239884288-vUlV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_xj1QBIy4RnDuKMoQp8yo4i8QCKxf266A) | [Blog](https://dev.to/horlartundhey/a-week-of-building-and-breaking-aws-infrastructure-gae) |
 | 07 | Azure Cloud | ✅ Completed | ✅ Solved | [LinkedIn](https://www.linkedin.com/posts/olatunde-ibitoye_dmibypravinmishra-azure-aws-ugcPost-7519120581011808256-9qqd/) | [Blog](https://dev.to/horlartundhey/same-ideas-different-names-a-week-of-rebuilding-my-aws-skills-on-azure-296e) |
 | 08 | Terraform | ✅ Completed | ✅ Solved | [LinkedIn 1](https://www.linkedin.com/posts/olatunde-ibitoye_dmibypravinmishra-aws-terraform-share-7522640616132923392-AM4b/) · [LinkedIn 2](https://www.linkedin.com/posts/olatunde-ibitoye_dmibypravinmishra-aws-terraform-ugcPost-7523281383688011777-Ggpf/) · [LinkedIn 3](https://www.linkedin.com/posts/olatunde-ibitoye_dmibypravinmishra-terraform-agenticai-ugcPost-7523321805118545920-uEcY/) | [Blog](https://dev.to/horlartundhey/from-one-vm-to-a-three-tier-app-with-an-ai-that-wouldnt-let-press-apply-2e0c) |
-| 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
-| 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
+| 09 | Ansible | ✅ Completed | ✅ Solved | [LinkedIn 1](https://www.linkedin.com/posts/olatunde-ibitoye_dmibypravinmishra-ansible-terraform-share-7524389442556653568-S0MU/) · [LinkedIn 2](https://www.linkedin.com/posts/olatunde-ibitoye_dmibypravinmishra-ansible-aws-ugcPost-7524412981271646208-nJhJ/) · [LinkedIn 3](https://www.linkedin.com/posts/olatunde-ibitoye_dmibypravinmishra-terraform-ansible-share-7524448162670100480-QfMZ/) · [LinkedIn 4](https://www.linkedin.com/posts/olatunde-ibitoye_dmibypravinmishra-terraform-ansible-share-7524497519125516288-w6yv/) · [LinkedIn 5](https://www.linkedin.com/posts/olatunde-ibitoye_dmibypravinmishra-ansible-agenticai-share-7524803138437013504-2T2j/) | — |
+| 10 | Azure DevOps (CI/CD) | ✅ Completed | ✅ Solved | [LinkedIn 1](https://www.linkedin.com/posts/olatunde-ibitoye_dmibypravinmishra-azuredevops-azurepipelines-share-7530976856573919233-Nogi/) · [LinkedIn 2](https://www.linkedin.com/posts/olatunde-ibitoye_dmibypravinmishra-azuredevops-terraform-ugcPost-7531014018346524672-EzaC/) · [LinkedIn 3](https://www.linkedin.com/posts/olatunde-ibitoye_dmibypravinmishra-azuredevops-cicd-ugcPost-7531071430533513216-F_BU/) · [LinkedIn 4](https://www.linkedin.com/posts/olatunde-ibitoye_dmibypravinmishra-terraform-ansible-ugcPost-7531310965737586688-az5I/) · [LinkedIn 5](https://www.linkedin.com/posts/olatunde-ibitoye_dmibypravinmishra-claudecode-azuredevops-ugcPost-7531335286933499904-htEP/) | [Blog](https://dev.to/horlartundhey/i-let-claude-code-triage-my-failing-cicd-pipeline-but-never-fix-it-ije) |
 | 11 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
 | 12 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
 | 13 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |

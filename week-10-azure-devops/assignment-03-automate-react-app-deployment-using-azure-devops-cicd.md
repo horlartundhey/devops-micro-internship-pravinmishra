@@ -37,7 +37,7 @@ Add a screenshot of Azure Repos showing:
 * `main` branch
 * Project files
 
-Add your screenshot here.
+![Screenshot 1](screenshots/sc14.png)
 
 ---
 
@@ -81,7 +81,7 @@ Add a screenshot of the Azure Pipeline YAML open in the editor showing:
 * Publish stage
 * Deploy stage
 
-Add your screenshot here.
+![Screenshot 2](screenshots/sc15.png)
 
 > Do not expose passwords, private keys, tokens, or cloud credentials.
 
@@ -104,7 +104,7 @@ Add a screenshot of one Azure DevOps pipeline run showing all four stages succee
 * Publish
 * Deploy
 
-Add your screenshot here.
+![Screenshot 3](screenshots/sc16.png)
 
 ---
 
@@ -122,7 +122,7 @@ Add a screenshot of the pipeline SSH verification log or VM terminal showing the
 
 `/var/www/html`
 
-Add your screenshot here.
+![Screenshot 4](screenshots/sc17.png)
 
 ---
 
@@ -143,7 +143,7 @@ Add a browser screenshot showing:
 * Your Full Name
 * Deployment date
 
-Add your screenshot here.
+![Screenshot 5](screenshots/sc18.png)
 
 ## Final Application URL
 
@@ -151,7 +151,7 @@ Add your screenshot here.
 
 Replace the placeholder and paste your final application URL below:
 
-[Paste your final application URL here.]
+[[http://13.53.234.224](http://13.53.234.224)]
 
 ---
 
@@ -159,7 +159,7 @@ Replace the placeholder and paste your final application URL below:
 
 Write a short explanation of the CI/CD workflow you created.
 
-[Write your summary here.]
+[I built a four-stage Azure DevOps pipeline that automatically builds, tests, packages and deploys a React application to an Ubuntu VM on AWS. I imported the my-react-app repository into Azure Repos in a new project and added my full name and the date to src/App.js. With Terraform I provisioned a dedicated EC2 target VM (with its own VPC, subnet, internet gateway and a security group allowing SSH and HTTP), and with Ansible I prepared it by installing Nginx, configuring React single-page-app routing (try_files $uri /index.html) and giving the deployment user write access to /var/www/html. A second Ansible playbook installed Node.js and npm on my self-hosted agent. The pipeline triggers on every commit to main. The Build stage runs npm ci and npm run build and publishes the build folder as the reactBuild artifact. Test runs the unit tests with CI=true. Publish downloads the artifact, verifies that index.html and the static folder exist, and republishes it as deploymentPackage. Deploy downloads that package and copies it over SSH to /var/www/html using the ubuntu-nginx-ssh service connection, so no password is stored in the YAML. It then verifies that index.html is in place, that Nginx is active and that curl returns HTTP 200. A commit to main triggered a new run automatically and the updated app went live without manual steps. I also fixed two issues along the way: the agent service was OOM-killed during tests on a 1 GB VM (I added swap and limited Jest to one worker), and the agent's 8 GB disk filled up (I grew the volume to 16 GB).]
 
 ---
 
@@ -174,11 +174,11 @@ Add a screenshot of your LinkedIn post showing:
 * Post text
 * At least one image or link
 
-Add your screenshot here.
+![Screenshot 6](screenshots/sc19.png)
 
 ## LinkedIn Post URL
 
-[Paste your public LinkedIn post URL here.]
+[[https://www.linkedin.com/posts/olatunde-ibitoye_dmibypravinmishra-azuredevops-cicd-ugcPost-7531071430533513216-F_BU/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_xj1QBIy4RnDuKMoQp8yo4i8QCKxf266A](https://www.linkedin.com/posts/olatunde-ibitoye_dmibypravinmishra-azuredevops-cicd-ugcPost-7531071430533513216-F_BU/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_xj1QBIy4RnDuKMoQp8yo4i8QCKxf266A)]
 
 > Do not expose VM passwords, tokens, private keys, cloud credentials, or other sensitive information.
 

@@ -58,7 +58,7 @@ Add a screenshot from AWS or Azure showing:
 * VM status as **Running**
 * Public IP address
 
-Add your screenshot here.
+![Screenshot 1](screenshots/sc1.png)
 
 ---
 
@@ -72,7 +72,7 @@ Add an SSH terminal screenshot showing the output of:
 
 The screenshot must confirm a supported Ubuntu version, `x86_64` architecture, and a successful HTTP response from Azure DevOps.
 
-Add your screenshot here.
+![Screenshot 2](screenshots/sc2.png)
 
 ---
 
@@ -93,7 +93,7 @@ Add a terminal screenshot showing:
 * Agent service start
 * `sudo ./svc.sh status` reporting that the service is running
 
-Add your screenshot here.
+![Screenshot 3](screenshots/sc3.png)
 
 > Ensure that the PAT is not visible.
 
@@ -116,7 +116,7 @@ Add a screenshot of the Azure DevOps Agent Pool **Agents** page showing:
 * Agent status as **Online**
 * Agent enabled and available
 
-Add your screenshot here.
+![Screenshot 4](screenshots/sc4.png)
 
 ---
 
@@ -138,7 +138,7 @@ Add a screenshot of `azure-pipelines.yml` open in the Azure Repos editor showing
 * Your Full Name
 * Linux verification commands
 
-Add your screenshot here.
+![Screenshot 5](screenshots/sc5.png)
 
 ---
 
@@ -156,7 +156,7 @@ Add a screenshot of the successful Azure DevOps pipeline run showing:
 * Output from `df -h`
 * Output from `pwd`
 
-Add your screenshot here.
+![Screenshot 6](screenshots/sc6.png)
 
 ---
 
@@ -165,7 +165,24 @@ Add your screenshot here.
 Paste the contents of your completed `azure-pipelines.yml` file below.
 
 ```yaml
-# Paste your completed azure-pipelines.yml here
+trigger: none
+
+pool:
+  name: SelfHostedPool
+
+steps:
+  - task: Bash@3
+    displayName: 'Verify self-hosted Ubuntu agent'
+    inputs:
+      targetType: inline
+      script: |
+        echo "Submitted by: Ibitoye Olatunde"
+        echo "Agent name: $(Agent.Name)"
+        echo "Machine name: $(Agent.MachineName)"
+        uname -a
+        whoami
+        df -h
+        pwd
 ```
 
 > Do not include your PAT, SSH private key, password, or cloud credentials in the YAML file.
@@ -176,13 +193,13 @@ Paste the contents of your completed `azure-pipelines.yml` file below.
 
 Write a short summary of what you configured.
 
-[Write your summary here.]
+I created an Azure DevOps organization (olatundeibitoye) and a private project, then made a Personal Access Token scoped to Agent Pools (Read & manage) and Build (Read & execute) only, following least privilege. I created a self-hosted agent pool called SelfHostedPool and linked it to the project. I launched an Ubuntu VM on AWS EC2 (t3.micro, SSH restricted to my IP) and checked its OS, x86_64 architecture and outbound HTTPS access to Azure DevOps. On the VM I downloaded and extracted the Azure Pipelines Linux agent (v5.282.0) and registered it with ./config.sh using the PAT, as ubuntu-agent-1. I installed it as a systemd service with svc.sh, so it keeps running after I log out, and confirmed active (running). The agent showed Online and Idle in the pool. Finally I committed a YAML pipeline (trigger: none, pool SelfHostedPool) with one Bash step. It ran on ubuntu-agent-1 and printed my name, agent and machine name, uname -a, whoami, df -h and pwd, which proves jobs execute on my own VM.
 
 ---
 
 # LinkedIn Requirement (If Applicable)
 
-## Screenshot 7 — LinkedInisor填Token Belle
+## Screenshot 7 — Published LinkedIn Post
 
 Add a screenshot of your LinkedIn post showing:
 
@@ -191,9 +208,9 @@ Add a screenshot of your LinkedIn post showing:
 * Three to five lines explaining your experience
 * A screenshot of the successful pipeline run with no secrets visible
 
-Add your screenshot here.
+![Screenshot 7](screenshots/sc7.png)
 
-**LinkedIn Post URL:** [Paste your LinkedIn post URL here]
+**LinkedIn Post URL:** [[https://www.linkedin.com/posts/olatunde-ibitoye_dmibypravinmishra-azuredevops-azurepipelines-share-7530976856573919233-Nogi/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_xj1QBIy4RnDuKMoQp8yo4i8QCKxf266A](https://www.linkedin.com/posts/olatunde-ibitoye_dmibypravinmishra-azuredevops-azurepipelines-share-7530976856573919233-Nogi/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_xj1QBIy4RnDuKMoQp8yo4i8QCKxf266A)]
 
 ---
 

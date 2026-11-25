@@ -6,11 +6,11 @@ Part of the DevOps Micro Internship (DMI) — Agentic AI Track
 
 ## Student Information
 
-**Full Name:** [Enter your full name]
+**Full Name:** [Ibitoye Olatunde]
 
-**GitHub Repository or Fork URL:** [Paste your repository URL]
+**GitHub Repository or Fork URL:** [https://github.com/horlartundhey/theepicbook]
 
-**Public LinkedIn Post URL:** [Paste your LinkedIn post URL]
+**Public LinkedIn Post URL:** [[https://www.linkedin.com/posts/olatunde-ibitoye_dmibypravinmishra-claudecode-azuredevops-ugcPost-7531335286933499904-htEP/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_xj1QBIy4RnDuKMoQp8yo4i8QCKxf266A](https://www.linkedin.com/posts/olatunde-ibitoye_dmibypravinmishra-claudecode-azuredevops-ugcPost-7531335286933499904-htEP/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_xj1QBIy4RnDuKMoQp8yo4i8QCKxf266A)]
 
 ---
 
@@ -42,17 +42,17 @@ Confirm that both EpicBook pipelines are healthy and place the supplied assignme
 
 Terminal output showing the latest completed Infrastructure and Application Pipeline runs with successful results.
 
-Add your screenshot here.
+![Screenshot 1](screenshots/sc26.png)
 
 ## Notes
 
 ### 1. What proves that both pipelines were healthy before the drill?
 
-[Write your answer here.]
+[The Azure DevOps CLI returned the latest run of each pipeline directly from the API. The Infrastructure Pipeline's run 12 (20261125.2) and the Application Pipeline's run 17 (20261125.5) both show Status completed and Result succeeded on the main branch. The deployed EpicBook site was also running and reachable at the same time. Later, the triage script confirmed it too, with both pipelines marked PASS, Overall Status: HEALTHY and exit code 0.]
 
 ### 2. Why is a healthy baseline necessary before introducing a controlled failure?
 
-[Write your answer here.]
+[Without a known-good starting point, I couldn't tell whether a failure found later was caused by my deliberate change or already existed. With the baseline proven, any failure the triage finds afterwards can be attributed to the drill. It also shows that the triage tooling reports HEALTHY correctly when nothing is wrong, so a failure report later can be trusted as a real detection rather than a false alarm.]
 
 ---
 
@@ -68,21 +68,21 @@ Configure the supplied project context and verify the safety boundaries Claude m
 
 `CLAUDE.md` open in the editor with the Project Overview, Incident Workflow, Safety Rules, and Output Rules visible.
 
-Add your screenshot here.
+![Screenshot 2](screenshots/sc27.png)
 
 ## Notes
 
 ### 1. Why does Claude need project-specific operational context?
 
-[Write your answer here.]
+[Claude doesn't know my environment by default. CLAUDE.md tells it there are two pipelines, that Terraform builds the infrastructure and Ansible deploys the app, and what order to work in. With that, it can tell an infrastructure failure from an application one and give relevant advice instead of generic guesses, and it follows the same reporting format every time.]
 
 ### 2. Which rules keep the human responsible for the recovery action?
 
-[Write your answer here.]
+[Recommend a fix, but do not apply it", "Require human approval and action for every recovery change", and the Incident Workflow itself, where step 3 is "Human Act". Also the rules against editing any project file and against triggering, retrying, cancelling, deleting or approving a pipeline run.]
 
 ### 3. Which rules protect pipeline credentials and application secrets?
 
-[Write your answer here.]
+["Never read, print, store, expose, or change a token, password, private key, authorization header, Service Connection credential, database credential, or other secret"; "Never request that a secret be pasted into the Claude Code session"; and the rule against changing Service Connections, Secure Files, Variable Groups, agent pools or pipeline permissions. The output rule "Do not expose credentials or other sensitive values in the output" backs this up.]
 
 ---
 
@@ -98,7 +98,7 @@ Configure the supplied Bash script and verify that it retrieves and classifies e
 
 Editor showing the script configuration variables, report filenames, check-function array, and read-only log-retrieval functions. Ensure that no token is visible.
 
-Add your screenshot here.
+![Screenshot 3](screenshots/sc28.png)
 
 ---
 
@@ -106,29 +106,29 @@ Add your screenshot here.
 
 Terminal showing successful Bash syntax validation and executable file permission.
 
-Add your screenshot here.
+![Screenshot 4](screenshots/sc29.png)
 
 ## Notes
 
 ### 1. Why are pipeline metadata and step console logs handled separately?
 
-[Write your answer here.]
+[Metadata (run ID, branch, status, result) says what happened, and it comes from one Azure DevOps list call. The console logs say why, and they come from a different API that returns one log per step. Keeping them apart means the script can still report a pipeline's state if the log download fails, and it can mark that log failure as a triage error instead of a healthy result.]
 
 ### 2. How does the script obtain the actual console logs?
 
-[Write your answer here.]
+[It gets an Azure DevOps access token from the signed-in Azure CLI, held in memory only and never printed. It then calls the Build Logs API with GET requests to list the logs of the run and downloads each one, sanitizes it and saves it under reports/.]
 
 ### 3. How does the check-function array control the classification loop?
 
-[Write your answer here.]
+[The CHECKS array lists the categories in priority order (agent, dependency, build, test, authentication, Terraform, Ansible). The loop takes each entry, looks up its pattern and counts matching log lines. The first category that matches becomes the most likely category, and the full table shows every category that matched.]
 
 ### 4. What prevents a failed but unmatched run from being reported as healthy?
 
-[Write your answer here.]
+[A failed result always counts as a FAIL. If no known pattern matches, the script falls back to "Unclassified Pipeline Failure", so it never shows a failed run as passing. A run that isn't completed is a WARN, and API or sign-in problems are errors (exit 3), never healthy.]
 
 ### 5. Why are different exit codes useful to another automation tool?
 
-[Write your answer here.]
+[A scheduler or CI job can branch on the code without parsing text: 0 means do nothing, 1 means wait and re-check, 2 means alert someone about a failure, and 3 means the monitoring itself is broken and needs fixing.]
 
 ---
 
@@ -144,17 +144,17 @@ Run the supplied script against the healthy baseline and verify the initial pipe
 
 Healthy pipeline report showing your Full Name, both successful pipelines, Overall Status `HEALTHY`, and captured exit code `0`.
 
-Add your screenshot here.
+![Screenshot 5](screenshots/sc30.png)
 
 ## Notes
 
 ### 1. What evidence proves that both pipelines are healthy?
 
-[Write your answer here.]
+[The report shows both latest runs as completed and succeeded on main, both checks as PASS, a summary of PASS=2 WARN=0 FAIL=0 ERROR=0, Overall Status: HEALTHY and exit code 0.]
 
 ### 2. Why must the baseline exit code be verified before the incident drill?
 
-[Write your answer here.]
+[It proves the script works and reports healthy correctly when nothing is wrong. After the drill, a changed exit code (2) can then be attributed to the failure I introduced, not to a script or configuration problem.]
 
 ---
 
@@ -170,7 +170,7 @@ Configure the supplied Claude Code skill and verify that it runs the Bash tool a
 
 `SKILL.md` showing the frontmatter, manual-invocation setting, narrowly scoped tools, safety rules, and required output structure.
 
-Add your screenshot here.
+![Screenshot 6](screenshots/sc31.png)
 
 ---
 
@@ -178,25 +178,25 @@ Add your screenshot here.
 
 Healthy `/pipeline-triage` result showing that both pipelines are healthy and no fix is required.
 
-Add your screenshot here.
+![Screenshot 7](screenshots/sc32.png)
 
 ## Notes
 
 ### 1. Why is `disable-model-invocation: true` appropriate for this skill?
 
-[Write your answer here.]
+[The skill runs a command against live Azure DevOps. With this flag, Claude can't start it on its own in the middle of another conversation. Only I can, by typing /pipeline-triage, so every run is a deliberate human decision.]
 
 ### 2. Why should the skill avoid broad Bash approval?
 
-[Write your answer here.]
+[A broad grant like Bash(*) would let Claude run any command, including ones that change pipelines or files. The skill only pre-approves the single command ./pipeline-triage.sh and read access to CLAUDE.md and reports/, so a mistake or a prompt injection in a log has very little it can do.]
 
 ### 3. What work is performed by Bash, and what work is performed by Claude?
 
-[Write your answer here.]
+[Bash (the script) does the mechanical work: it queries Azure DevOps, downloads and sanitizes the logs, classifies failures and writes the report. Claude reads that evidence, explains it, picks the most likely cause and recommends one fix for me to review.]
 
 ### 4. Why are permission rules required in addition to written safety instructions?
 
-[Write your answer here.]
+[Written instructions are guidance that a model can misread or be talked out of. The permission rules (.claude/settings.json deny rules and the skill's allowed-tools) are enforced by Claude Code itself, so Edit, Write, git, az, Terraform and Ansible are blocked regardless of what Claude decides.]
 
 ---
 
@@ -212,25 +212,25 @@ Create a controlled Application Pipeline failure that can be diagnosed without c
 
 Failed Application Pipeline run showing the temporary branch, failed status, failed step, and relevant non-sensitive error evidence.
 
-Add your screenshot here.
+![Screenshot 8](screenshots/sc33.png)
 
 ## Notes
 
 ### 1. What exact failure did you introduce?
 
-[Write your answer here.]
+[I added a dependency that doesn't exist, "not-a-real-package-xyz": "1.0.0", to package.json on the temporary branch drill/pipeline-failure. npm ci fails because it isn't in package-lock.json and can't be resolved.]
 
 ### 2. Which category should detect it?
 
-[Write your answer here.]
+[Dependency installation.]
 
 ### 3. Why is the failure safe and easily reversible?
 
-[Write your answer here.]
+[It occurs in the Validate stage, before any deployment step, and only on a temporary branch, so Azure resources, the VMs, the database and the running app aren't touched. Reverting is one git revert of a single commit.]
 
 ### 4. How did you prevent the deliberate failure from reaching `main` or changing the deployed application?
 
-[Write your answer here.]
+[I used a separate branch, never merged it, queued the pipeline manually against that branch, and made the Deploy stage conditional on main, so a drill branch can never deploy. The failed Validate stage also skips Deploy.]
 
 ---
 
@@ -246,25 +246,26 @@ Use `/pipeline-triage` to classify the failed Application Pipeline without allow
 
 `/pipeline-triage` output and saved incident report showing the affected pipeline, failure category, sanitized evidence, recommendation, and your Full Name.
 
-Add your screenshot here.
+![Screenshot 9.1](screenshots/sc34.1.png)
+![Screenshot 9.2](screenshots/sc34.2.png)
 
 ## Notes
 
 ### 1. Which failure category was identified?
 
-[Write your answer here.]
+[Dependency installation.]
 
 ### 2. What exact evidence supported the diagnosis?
 
-[Write your answer here.]
+[The Validate stage failed at the Install Node dependencies (npm ci) step, and the sanitized log shows `npm ERR! code E404`, `npm ERR! 404 Not Found - GET https://registry.npmjs.org/not-a-real-package-xyz - Not found` and `npm ERR! 404 'not-a-real-package-xyz@1.0.0' is not in this registry.` The report matched 18 log lines to the Dependency installation category and no other category.]
 
 ### 3. Did Claude apply the fix or rerun the pipeline? Why is that important?
 
-[Write your answer here.]
+[No. Claude only diagnosed and recommended. That matters because an automatic fix could be wrong or could change production, and the human stays accountable. Claude's wrong guess about a pipeline never turns into an unreviewed change.]
 
 ### 4. Which part represents Gather, and which part represents Analyze?
 
-[Write your answer here.]
+[Gather is pipeline-triage.sh, which queried Azure DevOps, downloaded and sanitized the logs and wrote the report. Analyze is Claude reading that report and logs, classifying the failure and recommending a fix.]
 
 ---
 
@@ -280,7 +281,7 @@ Apply the recommended fix manually and verify that the Application Pipeline and 
 
 Corrected Application Pipeline run showing the temporary branch and successful status.
 
-Add your screenshot here.
+![Screenshot 10](screenshots/sc35.png)
 
 ---
 
@@ -288,29 +289,29 @@ Add your screenshot here.
 
 Recovery `/pipeline-triage` output showing Overall Status `HEALTHY`, exit code `0`, your Full Name, and both saved report filenames.
 
-Add your screenshot here.
+![Screenshot 11](screenshots/sc36.png)
 
 ## Notes
 
 ### 1. What exact fix did you apply?
 
-[Write your answer here.]
+[I reverted the drill commit with git revert on drill/pipeline-failure, which removed the invalid not-a-real-package-xyz dependency from package.json, then pushed and re-queued the pipeline.]
 
 ### 2. Did the fix match Claude’s recommendation? Explain briefly.
 
-[Write your answer here.]
+[Yes. Claude identified the non-existent dependency as the cause and recommended removing or correcting it. Reverting the commit does exactly that.]
 
 ### 3. What evidence proves that the pipeline recovered?
 
-[Write your answer here.]
+[The new run on the drill branch is completed and succeeded (Validate passes, Deploy is skipped by design), and the recovery triage reports HEALTHY with exit code 0.]
 
 ### 4. Why is a second triage run required after the pipeline becomes green?
 
-[Write your answer here.]
+[A green pipeline is only one signal. The second triage confirms with the same independent tooling that the latest run is healthy and that the failure category is gone, so recovery is measured the same way the failure was detected.]
 
 ### 5. What risk would be created if Claude could automatically edit, push, approve, and rerun the pipeline?
 
-[Write your answer here.]
+[A wrong or manipulated diagnosis could be pushed and deployed without a human seeing it. Claude could also reinforce its own mistake by approving and rerunning, and with deploy rights it could change production or expose credentials with no review or audit trail.]
 
 ---
 
@@ -318,7 +319,9 @@ Add your screenshot here.
 
 ## LinkedIn Post URL
 
-[Paste your public LinkedIn post URL here.]
+[[https://www.linkedin.com/posts/olatunde-ibitoye_dmibypravinmishra-claudecode-azuredevops-ugcPost-7531335286933499904-htEP/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_xj1QBIy4RnDuKMoQp8yo4i8QCKxf266A](https://www.linkedin.com/posts/olatunde-ibitoye_dmibypravinmishra-claudecode-azuredevops-ugcPost-7531335286933499904-htEP/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_xj1QBIy4RnDuKMoQp8yo4i8QCKxf266A)]
+
+**Blog Post URL:** https://dev.to/horlartundhey/i-let-claude-code-triage-my-failing-cicd-pipeline-but-never-fix-it-ije
 
 ## Evidence
 
@@ -326,7 +329,7 @@ Add your screenshot here.
 
 Published LinkedIn post showing its text and at least one image or link.
 
-Add your screenshot here.
+![Screenshot 12](screenshots/sc37.png)
 
 ---
 
@@ -390,11 +393,13 @@ Confirm that the following files are available in your repository:
 
 # Final Submission
 
-**Full Name:** [Enter your full name]
+**Full Name:** Ibitoye Olatunde
 
-**GitHub Repository or Fork URL:** [Paste your repository URL]
+**GitHub Repository or Fork URL:** https://github.com/horlartundhey/theepicbook
 
-**LinkedIn Post URL:** [Paste your public LinkedIn post URL]
+**LinkedIn Post URL:** https://www.linkedin.com/posts/olatunde-ibitoye_dmibypravinmishra-claudecode-azuredevops-ugcPost-7531335286933499904-htEP/
+
+**Blog Post:** [I Let Claude Code Triage My Failing CI/CD Pipeline (But Never Fix It)](https://dev.to/horlartundhey/i-let-claude-code-triage-my-failing-cicd-pipeline-but-never-fix-it-ije)
 
 ---
 
